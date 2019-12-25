@@ -3,7 +3,7 @@ FROM openjdk:8-jre-alpine
 VOLUME /tmp
 
 ARG JAR_FILE=build/libs/halo.jar
-ARG PORT=80
+ARG PORT=8090
 ARG TIME_ZONE=Asia/Shanghai
 
 ENV TZ=${TIME_ZONE}
