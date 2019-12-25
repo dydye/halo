@@ -8,7 +8,7 @@ ARG TIME_ZONE=Asia/Shanghai
 
 ENV TZ=${TIME_ZONE}
 
-COPY ${JAR_FILE} halo.jar
+#COPY ${JAR_FILE} halo.jar
 
 EXPOSE ${PORT}
 
