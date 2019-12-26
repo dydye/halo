@@ -1,0 +1,15 @@
+# 类 Unix 用户
+./gradlew bootRun
+
+# Windows 用户
+./gradlew.bat bootRun
+
+# 类 Unix 用户
+./gradlew bootRun --args="--spring.profiles.active=dev --server.port=2333"
+
+# Windows 用户
+./gradlew.bat bootRun --args="--spring.profiles.active=dev --server.port=2333"
+
+-Dspring.profiles.active=dev
+-Dhalo.auth-enabled=false
+-Dhalo.production-env=false

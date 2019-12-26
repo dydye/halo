@@ -22,7 +22,6 @@ spring:
       enabled: always
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-
     # H2 Database 配置
 #    driver-class-name: org.h2.Driver
 #    url: jdbc:h2:file:~/.halo/db/halo
@@ -34,13 +33,12 @@ spring:
     url: jdbc:mysql://localhost:3306/halodb?characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai
     username: root
     password: 123456
-
-  h2:
-    console:
-      settings:
-        web-allow-others: false
-      path: /h2-console
-      enabled: false
+#  h2:
+#    console:
+#      settings:
+#        web-allow-others: false
+#      path: /h2-console
+#      enabled: false
   jpa:
     hibernate:
       ddl-auto: update
